@@ -3,7 +3,7 @@
 sample_data=/D/AISHELL-1_sample/S0150
 # 指定新创建文件保存的地方
 data=/D/AISHELL-1_sample/S0150/data
-if [ ! ‐d $data ];then
+if [[ ! ‐d $data ]];then
 mkdir ‐p $data
 fi
 # 初始化
