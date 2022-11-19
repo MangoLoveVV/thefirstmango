@@ -1,8 +1,8 @@
 #!/bin/bash
 # 数据集存放的位置，修改为保存文件的位置
-sample_data=/D/AISHELL-1_sample/S0150/S0150_mic
+sample_data=/d/AISHELL-1_sample
 # 指定新创建文件保存的地方
-data=/D/AISHELL-1_sample/S0150/S0150_mic/data
+data=/d/AISHELL-1_sample/data
 if [ ! ‐d $data ];then
 mkdir ‐p $data
 fi
