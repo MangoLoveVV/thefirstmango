@@ -24,4 +24,4 @@ echo "${file%.*} $txt" >> $data/text
 fi
 done
 done
-echo "wav and text done!"
+echo "wav and text done"
