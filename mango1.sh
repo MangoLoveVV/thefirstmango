@@ -8,17 +8,17 @@ if [ ! -d $data ];then
     mkdir -p $data
 fi
 # 初始化
-rm -rf $data/wav.scp
+rm -rf $data/wav
 rm -rf $data/text
-# 1.准备 wav.scp text
+# 1.准备 wav text
 for sub_dir in `ls ${sample_data}`;do
     wav_txt_dir=${sample_data}/${sub_dir}/${sub_dir}_mic
     echo $wav_txt_dir
     for file in `ls $wav_txt_dir`;do
         if [ ${file#*.} != "txt" ];then
             # 准备wav.scp
-            echo "${file%.*} $wav_txt_dir/${file%.*}.wav" >> $data/wav.scp
-            # echo `wc -l $data/wav.scp`
+            echo "${file%.*} $wav_txt_dir/${file%.*}.wav" >> $data/wav
+            # echo `wc -l $data/wav`
             # 准备text
             txt=`cat $wav_txt_dir/${file%.*}.txt`
             echo "${file%.*} $txt" >> $data/text
