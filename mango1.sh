@@ -1,5 +1,4 @@
 #!/bin/bash
-. ./path.sh
 
 # 数据集存放的位置
 sample_data=/d/AISHELL-1_sample
